@@ -1,5 +1,7 @@
 body{
     background-color:#1f1e1d;
+    font-family: serif;
+    margin: 0;
 }
 h1{
     color:white;
@@ -46,6 +48,24 @@ p{
     text-align: center;
 }
 
+.chapter-nav {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25)
+}
+
+.chapter-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chapter-nav a:hover {
+    text-decoration: underline;
+}
+
 .site-title {
     font-size: 1.4 em;
     font-weight: bold;
@@ -65,4 +85,34 @@ p{
     .nav-center {
         order: -1; /* This makes sure that the title goes on top on small screens */
     }
+    .chapter-container {
+        padding: 20px 25px;
+    }
+    .chapter-container p {
+        max-width: 95%;
+    }
+}
+
+/* Box, where the actual chapter is shown*/
+.chapter-container {
+    background-color: #111;
+    color: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.chapter-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chapter-container p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
