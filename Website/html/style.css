@@ -1,0 +1,68 @@
+body{
+    background-color:#1f1e1d;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+p{
+    color:white;
+    max-width: 700px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkblue;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between links*/
+}
+
+.nav-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 1.4 em;
+    font-weight: bold;
+    color: #333;
+}
+.search-bar input {
+    padding: 5px 8px;
+    font-size: 1em;
+}
+
+/* If screen is smaller than 600 px*/
+@media (max-width: 600px){
+    .top-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .nav-center {
+        order: -1; /* This makes sure that the title goes on top on small screens */
+    }
+}
